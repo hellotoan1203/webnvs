@@ -300,6 +300,7 @@
         </div>
       </div>
     </div>
+    <div class='bttop'><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></div>
   </footer>
   <!-- Script -->
   <script src="js/jquery.min.js"></script>
@@ -319,7 +320,22 @@
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
-
+  <script type='text/javascript'>
+    $(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() != 0) {
+          $('.bttop').fadeIn();
+        } else {
+          $('.bttop').fadeOut();
+        }
+      });
+      $('.bttop').click(function() {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+      });
+    });
+  </script>
 </body>
 </body>
 
