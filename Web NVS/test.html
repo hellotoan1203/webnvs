@@ -1,0 +1,395 @@
+    <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>test thôi</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<style type="text/css" media="screen">
+  .mi-slider {
+    position: relative;
+    margin-top: 30px;
+    height: 490px;
+}
+ 
+.mi-slider ul {
+    list-style-type: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+    pointer-events: none;
+    top:0px;
+}
+ 
+.no-js .mi-slider ul {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 0;
+    overflow: visible;
+}
+ 
+.mi-slider ul.mi-current {
+    pointer-events: auto;
+}
+ 
+.mi-slider ul li {
+    display: inline-block;
+    padding: 20px;
+    width: 20%;
+    max-width: 300px;
+    -webkit-transform: translateX(600%);
+    transform: translateX(600%);
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+ 
+.no-js .mi-slider ul li {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+ 
+.mi-slider ul li a,
+.mi-slider ul li img {
+    display: block;
+    margin: 0 auto;
+}
+ 
+.mi-slider ul li a {
+    outline: none;
+    cursor: pointer;
+}
+ 
+.mi-slider ul li img {
+    max-width: 100%;
+    border: none;
+}
+ 
+.mi-slider ul li h4 {
+    display: inline-block;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 10px 0;
+    color: red;
+}
+ 
+.mi-slider ul li:hover {
+    opacity: 0.7;
+} 
+ 
+.mi-slider nav {
+    position: relative;
+    top: 300px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 5px solid #333;
+}
+ 
+.no-js nav {
+    display: none;
+}
+ 
+.mi-slider nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 40px 30px 30px 34px;
+    position: relative;
+    color: #888;
+    outline: none;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+ 
+.mi-slider nav a:hover,
+.mi-slider nav a.mi-selected {
+    color: #000;
+}
+ 
+.mi-slider nav a.mi-selected:after,
+.mi-slider nav a.mi-selected:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+ 
+.mi-slider nav a.mi-selected:after {
+    border-color: transparent;
+    border-top-color: #fff;
+    border-width: 20px;
+    left: 50%;
+    margin-left: -20px;
+}
+ 
+.mi-slider nav a.mi-selected:before {
+    border-color: transparent;
+    border-top-color: #333;
+    border-width: 27px;
+    left: 50%;
+    margin-left: -27px;
+}
+ 
+/* Move classes and animations */
+ 
+.mi-slider ul:first-child li,
+.no-js .mi-slider ul li {
+    -webkit-animation: scaleUp 350ms ease-in-out both;
+    animation: scaleUp 350ms ease-in-out both;
+}
+ 
+@-webkit-keyframes scaleUp {
+    0% { -webkit-transform: translateX(0) scale(0); }
+    100% { -webkit-transform: translateX(0) scale(1); }
+}
+ 
+@keyframes scaleUp {
+    0% { -webkit-transform: translateX(0) scale(0); transform: translateX(0) scale(0); }
+    100% { -webkit-transform: translateX(0) scale(1); transform: translateX(0) scale(1); }
+}
+ 
+.mi-slider ul:first-child li:first-child {
+    -webkit-animation-delay: 90ms;
+    animation-delay: 90ms;
+}
+ 
+.mi-slider ul:first-child li:nth-child(2) {
+    -webkit-animation-delay: 180ms;
+    animation-delay: 180ms;
+}
+ 
+.mi-slider ul:first-child li:nth-child(3) {
+    -webkit-animation-delay: 270ms;
+    animation-delay: 270ms;
+}
+ 
+.mi-slider ul:first-child li:nth-child(4) {
+    -webkit-animation-delay: 360ms;
+    animation-delay: 360ms;
+}
+ 
+/* moveFromRight */
+ 
+.mi-slider ul.mi-moveFromRight li {
+    -webkit-animation: moveFromRight 350ms ease-in-out both;
+    animation: moveFromRight 350ms ease-in-out both;
+}
+ 
+/* moveFromLeft */
+ 
+.mi-slider ul.mi-moveFromLeft li {
+    -webkit-animation: moveFromLeft 350ms ease-in-out both;
+    animation: moveFromLeft 350ms ease-in-out both;
+}
+ 
+/* moveToRight */
+ 
+.mi-slider ul.mi-moveToRight li {
+    -webkit-animation: moveToRight 350ms ease-in-out both;
+    animation: moveToRight 350ms ease-in-out both;
+}
+ 
+/* moveToLeft */
+ 
+.mi-slider ul.mi-moveToLeft li {
+    -webkit-animation: moveToLeft 350ms ease-in-out both;
+    animation: moveToLeft 350ms ease-in-out both;
+}
+ 
+/* Animation Delays */
+ 
+.mi-slider ul.mi-moveToLeft li:first-child,
+.mi-slider ul.mi-moveFromRight li:first-child,
+.mi-slider ul.mi-moveToRight li:nth-child(4),
+.mi-slider ul.mi-moveFromLeft li:nth-child(4) {
+    -webkit-animation-delay: 0ms;
+    animation-delay: 0ms;
+}
+ 
+.mi-slider ul.mi-moveToLeft li:nth-child(2),
+.mi-slider ul.mi-moveFromRight li:nth-child(2),
+.mi-slider ul.mi-moveToRight li:nth-child(3),
+.mi-slider ul.mi-moveFromLeft li:nth-child(3) {
+    -webkit-animation-delay: 90ms;
+    animation-delay: 90ms;
+}
+ 
+.mi-slider ul.mi-moveToLeft li:nth-child(3),
+.mi-slider ul.mi-moveFromRight li:nth-child(3),
+.mi-slider ul.mi-moveToRight li:nth-child(2),
+.mi-slider ul.mi-moveFromLeft li:nth-child(2) {
+    -webkit-animation-delay: 180ms;
+    animation-delay: 180ms;
+}
+ 
+.mi-slider ul.mi-moveToLeft li:nth-child(4),
+.mi-slider ul.mi-moveFromRight li:nth-child(4),
+.mi-slider ul.mi-moveToRight li:first-child,
+.mi-slider ul.mi-moveFromLeft li:first-child  {
+    -webkit-animation-delay: 270ms;
+    animation-delay: 270ms;
+}
+ 
+/* Animations */
+ 
+@-webkit-keyframes moveFromRight {
+    0% { -webkit-transform: translateX(600%); }
+    100% { -webkit-transform: translateX(0%); }
+}
+ 
+@-webkit-keyframes moveFromLeft {
+    0% { -webkit-transform: translateX(-600%); }
+    100% { -webkit-transform: translateX(0%); }
+}
+ 
+@-webkit-keyframes moveToRight {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(600%); }
+}
+ 
+@-webkit-keyframes moveToLeft {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-600%); }
+}
+ 
+@keyframes moveFromRight {
+    0% { -webkit-transform: translateX(600%); transform: translateX(600%); }
+    100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+ 
+@keyframes moveFromLeft {
+    0% { -webkit-transform: translateX(-600%); transform: translateX(-600%); }
+    100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+ 
+@keyframes moveToRight {
+    0% { -webkit-transform: translateX(0%); transform: translateX(0%); }
+    100% { -webkit-transform: translateX(600%); transform: translateX(600%); }
+}
+ 
+@keyframes moveToLeft {
+    0% { -webkit-transform: translateX(0%); transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-600%); transform: translateX(-600%); }
+}
+ 
+.mi-slider {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ 
+/* Media Queries */
+@media screen and (max-width: 1000px){
+    .mi-slider nav {
+        max-width: 90%;
+    }
+    .mi-slider nav a {
+        font-size: 12px;
+        padding: 40px 10px 30px 14px;
+    }
+}
+ 
+@media screen and (max-width: 740px){
+    .mi-slider {
+        height: 300px;
+    }
+    .mi-slider nav {
+        top: 100px;
+    }
+}
+ 
+@media screen and (max-width: 600px){
+    .mi-slider {
+        text-align: center;
+        height: auto;
+    }
+ 
+    .mi-slider ul {
+        position: relative;
+        display: inline;
+        bottom: auto;
+        pointer-events: auto;
+    }
+ 
+    .mi-slider ul li {
+        -webkit-animation: none !important;
+        animation: none !important;
+        -webkit-transform: translateX(0) !important;
+        transform: translateX(0) !important;
+        padding: 10px 3px;
+        min-width: 140px;
+    }
+ 
+    .mi-slider nav {
+        display: none;
+    }
+}
+</style> 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.catslider.js"></script>
+<script src="js/modernizr.custom.63321.js"></script>
+<script type="text/javascript">
+    $(function() {
+ 
+        $( '#mi-slider' ).catslider();
+ 
+    });
+</script>
+</head>
+<body>
+  <div id="mi-slider" class="mi-slider">
+    <ul>
+        <li><a href="#"><img src="./images/1.png" alt="img01"><h4>Chuẩn bị khoản đầu tư</h4></a></li>
+        <li><a href="#"><img src="images/2.png" alt="img02"><h4>Chọn dự án đầu tư</h4></a></li>
+        <li><a href="#"><img src="images/3.png" alt="img03"><h4>Kí kết theo luật sư và dự án</h4></a></li>
+        <li><a href="#"><img src="images/4.png" alt="img04"><h4>Hoàn tất hồ sơ và chuyển tiền</h4></a></li>
+    </ul>
+    <ul>
+        <li><a href="#"><img src="images/5.png" alt="img05"><h4>Nộp đơn xin thường trú</h4></a></li>
+        <li><a href="#"><img src="images/6.png" alt="img06"><h4>Gửi hồ sơ nếu thành công</h4></a></li>
+        <li><a href="#"><img src="images/7.png" alt="img07"><h4>Khám sức khỏe và phỏng vấn</h4></a></li>
+        <li><a href="#"><img src="images/8.png" alt="img08"><h4>Hoàn lại tiền khi không thành công</h4></a></li>
+    </ul>
+    <ul>
+        <li><a href="#"><img src="images/9.png" alt="img09"><h4>Được cấp visa định cư </h4></a></li>
+        <li><a href="#"><img src="images/10.png" alt="img10"><h4>Nhập cảnh vào Mỹ</h4></a></li>
+        <li><a href="#"><img src="images/11.png" alt="img11"><h4>Nhận lãi hàng năm</h4></a></li>
+    </ul>
+    <ul>
+        <li><a href="#"><img src="images/12.png" alt="img12"><h4>Nhận thẻ xanh</h4></a></li>
+        <li><a href="#"><img src="images/13.png" alt="img13"><h4>Thi nhập tịch</h4></a></li>
+        <li><a href="#"><img src="images/14.png" alt="img14"><h4>Hoàn trả tiền vốn</h4></a></li>
+        
+    </ul>
+    <nav>
+        <a href="#">Bắt đầu</a>
+        <a href="#">Xin thường chú</a>
+        <a href="#">Nhập cảnh</a>
+        <a href="#">Thẻ xanh</a>
+    </nav>
+</div>	
+
+</body>
+</html>
