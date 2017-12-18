@@ -2345,7 +2345,7 @@ a.btn:focus {
 
 @-webkit-keyframes scaleUp {
   0% {
-     -webkit-transform: translateX(0) scale(0);
+    -webkit-transform: translateX(0) scale(0);
   }
   100% {
     -webkit-transform: translateX(0) scale(1);
@@ -2630,6 +2630,20 @@ a.btn:focus {
   margin-right: 5px;
 }
 
+.cungchude {
+  border-top: solid 1px;
+  width: 500px;
+  padding: 10px;
+  margin-right:20px;
+  line-height: 17px;
+}
+
+.cungchude a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
 .cungchude h6 {
   font-size: 16px;
 }
@@ -2650,7 +2664,7 @@ a.btn:focus {
 .bttop {
   background: #ad1f23;
   text-align: center;
-  padding-top:  12px;
+  padding-top: 12px;
   position: fixed;
   bottom: 35px;
   right: 10px;
