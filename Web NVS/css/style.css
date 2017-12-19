@@ -2677,3 +2677,43 @@ a.btn:focus {
   height: 50px;
   width: 50px
 }
+/* Contact-page*/
+.tittle{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.tittle h3{
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+.tittle p{
+  font-size: 20px;
+}
+.detail-contact{
+    text-align: center;
+}
+.detail-contact a{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.icon-contact{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 2px;
+  margin-left: 130px;
+  text-align: center;
+  padding-top: 17px;
+  font-size: 40px;
+  margin-top: 20px
+}
+.information-contact{
+    margin: 20px 0px 30px;
+}
+.maps-contact{
+  margin-bottom: 20px;
+}
+.dangky{
+  text-align: center;
+}

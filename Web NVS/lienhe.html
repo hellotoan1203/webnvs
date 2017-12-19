@@ -97,71 +97,103 @@
     </nav>
   </div>
   <!-- /Navigation -->
-  <!--carousel-->
-  <section id="intro" style="margin-bottom: 20px">
-    <div id="main">
-      <div class="container">
-        <div id="carousel-simple" class="carousel" data-ride="carousel" style="height:420px">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-simple" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-simple" data-slide-to="1"></li>
-            <li data-target="#carousel-simple" data-slide-to="2"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="./img/carousel1.jpg" alt="">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Your title hear</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel hendrerit purus. Donec non pharetra arcu, ac lacinia velit. Morbi maximus, ipsum nec consectetur blandit, sem odio sodales sem, ut accumsan dui neque at dolor.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img src="./img/carousel2.jpg" alt="">
-            </div>
-            <div class="item">
-              <img src="./img/carousel3.jpg" alt="">
-            </div>
-
+  <!--Tittle-->
+  <div class="container">
+    <div class="tittle wow fadeInUp">
+      <h3><b>LIÊN HỆ VỚI NVS</b></h3>
+      <p>Chúng tôi rất hân hạnh dược phục vụ quý khánh. Đừng ngại liên hệ với chúng tôi</p>
+    </div>
+    <!--Detail contact-->
+    <div class="detail-contact">
+      <div class="row">
+        <div class="col-md-4">
+          <a class="wow fadeInUp" data-wow-delay="1s">VĂN PHÒNG VIỆT NAM</a>
+          <div class="icon-contact wow fadeInUp">
+            <i class="fa fa-home " aria-hidden="true"></i>
+          </div>
+          <div class="information-contact wow fadeInUp">
+            <p><b>Địa chỉ:</b> Lầu 7, tòa nhà SGNR, 161-163 Ký Con, P.Nguyễn Thái Bình, Quận 1, TP.HCM </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a class="wow fadeInUp" data-wow-delay="2s">VĂN PHÒNG HOA KỲ</a>
+          <div class="icon-contact wow fadeInUp">
+            <i class="fa fa-phone " aria-hidden="true"></i>
+          </div>
+          <div class="information-contact wow fadeInUp">
+            <p><b>Số điện thoại:</b> 0914 137 699 </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a class="wow fadeInUp" data-wow-delay="3s">VĂN PHÒNG CANADA</a>
+          <div class="icon-contact wow fadeInUp">
+            <i class="fa fa-envelope " aria-hidden="true"></i>
+          </div>
+          <div class="information-contact wow fadeInUp">
+            <p><b>Email:</b> info@dautuquocte.org</p>
           </div>
 
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-simple" role="button" data-slide="prev" style="margin-top: 70px">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-      </a>
-          <a class="right carousel-control" href="#carousel-simple" role="button" data-slide="next" style="margin-top: 70px">
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
         </div>
       </div>
     </div>
-  </section>
 
-  <!--/carousel-->
-  <!--content-->
-  <section>
-    <div class="container">
-      <div class="thetitle wow fadeInDown" ><h3>Contact us</h3></div>
-      <div class="wow fadeInUp">
-          <iframe src="./index (2).html" width="100%" height="600px" frameborder="0"></iframe>
-      </div>
+    <!--Google Maps-->
+    <div class="maps-contact">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.560973857622!2d106.69987995063205!3d10.768279162250277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f403a01a8cf%3A0x649cf5495a3f5a36!2zY8O0bmcgdHkgxJDhuqd1IFTGsCBRdeG7kWMgdOG6vw!5e0!3m2!1svi!2s!4v1513692595648" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-
+  </div>
+  <section id="contact" class="home-section nopadd-bot color-dark bg-white text-center">
+    <div class="container">
+      <div class="dangky">
+        <h5>GỬI YÊU CẦU CHO CHÚNG TÔI</h5>
+      </div>
+      <div class="row">
+          <div class="row marginbot-80">
+            <div class="col-md-10 col-md-offset-1 ">
+              <div id="sendmessage">Biểu mẫu của bạn đã được ghi lại! Xin chân thành cảm ơn</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Họ tên" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Số điện thoại" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Tin nhắn để lại cho chúng tôi.."></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit" class="btn btn-skin btn-lg btn-block">Gửi</button></div>
+              </form>
+            </div>
+          </div>
+      </div>
   </section>
+  <!-- Script -->
+  <div class='bttop'><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></div>
+  <!-- google map -->
   <div id="map-btn1-div">
     <a id="map-btn1" class="gmap-btn close-map-button btn-show" href="#map">
-    Liên hệ với chúng tôi
-    </a>
+		Liên hệ với chúng tôi
+		</a>
   </div>
   <a id="map-btn2" class="btn btn-skin btn-lg btn-noradius gmap-btn close-map-button btn-hide" href="#map" title="Close google map" data-toggle="tooltip" data-placement="top">
-  Lầu 7, tòa nhà SGNR, 161-163 Ký Con, P.Nguyễn Thái Bình, Quận 1, TP.HCM, Việt Nam
-  </a>
+	Lầu 7, tòa nhà SGNR, 161-163 Ký Con, P.Nguyễn Thái Bình, Quận 1, TP.HCM, Việt Nam
+	</a>
 
   <!-- google map -->
   <section id="map" class="close-map">
     <div id="google-map"></div>
   </section>
+  <!-- /google map -->
+
+
   <footer class="footer" style="padding-top: 20px">
     <div class="container">
       <div class="row">
@@ -185,7 +217,8 @@
       </div>
     </div>
   </footer>
-  <!-- Script -->
+
+  <!-- Core JavaScript Files -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
@@ -203,8 +236,10 @@
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
+  <script src="js/jquery.catslider.js"></script>
+  <script src="js/modernizr.custom.63321.js"></script>
 
 </body>
-</body>
+
 
 </html>
